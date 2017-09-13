@@ -1,0 +1,144 @@
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+@import "materialize.scss";
+// RULES OVERWRITES
+.pg-padding-top-default{
+  padding-top:1rem;
+}
+.pg-padding-top-medium{
+  padding-top:3rem;
+}
+.pg-padding-top-big{
+  padding-top:5rem;
+}
+// font icons
+.table-of-contents{
+  padding-top: 5rem;
+  .material-icons{
+    font-size: 35px;
+  }
+  .light{
+    &.active{
+      @extend .orange-text, .text-darken-1;
+      //color:#e65100;
+      border-left:2px solid;
+      font-weight: 400;
+    }
+  }
+}
+#sidenav-overlay{
+  z-index: 1;
+}
+nav{
+  line-height: 63px;
+  ul{
+    li{
+      a{
+        &:hover{
+          border-bottom: 2px solid;
+          @extend .orange-text, .text-darken-1;
+          background-color: transparent;
+        }
+      }
+    }
+  }
+  .active{
+    border-bottom: 2px solid;
+    @extend .orange-text, .text-darken-1;
+  }
+}
+.side-nav{
+  li{
+    a{
+      &:hover{
+        border-bottom: 2px solid;
+        @extend .orange-text, .text-darken-1;
+        background-color: transparent;
+      }
+    }
+  }
+}
+// work section
+.work{
+  .card-content{
+    text-align: left;
+  }
+}
+.pg-iblock{
+  display: inline-block;
+  a{
+    @extend .grey-text, .text-darken-2;
+  }
+}
+.pg-header{
+  h6{
+    padding-bottom: 0;
+    margin-bottom:0;
+  }
+  p{
+    padding-top: 0;
+    margin-top: 0;
+  }
+}
+
+nav{
+  .brand-logo{
+    left:0;
+    transform: translateX(0%);
+  }
+}
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+nav {
+  .button-collapse{
+    margin:0 45px;
+  }
+}
+p {
+  line-height: 2rem;
+}
+.button-collapse {
+  color: #26a69a;
+}
+.parallax-container {
+  &.section-frase{
+    max-height:200px;
+    min-height:200px;
+  }
+  min-height: 400px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255, 255, 255, 0.9);
+}
+.parallax-container .section {
+  width: 100%;
+}
+@media only screen and (max-width: $medium-screen) {
+  .parallax-container .section {
+    position: absolute;
+    top: 50%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+@media only screen and (max-width: $small-screen) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+footer.page-footer {
+  margin: 0;
+}
